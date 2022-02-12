@@ -1,13 +1,10 @@
 $(function () {
-    $(document).ready(function () {
-        $('.drawer').drawer();
-    });
-
-    AOS.init();
-
-    $('.main-visual').vegas({
-      overlay: false,
-      transition: 'blur', 
+  
+  AOS.init();
+  
+  $('.main-visual').vegas({
+    overlay: false,
+    transition: 'blur', 
       transitionDuration: 2000,
       delay: 10000,
       animation: 'kenburns',
@@ -17,5 +14,9 @@ $(function () {
         { src: './img/photo011.jpg' },
         { src: './img/photo012.jpg' },
       ]
+  });
+  
+    $(document).ready(function () {
+        $('.drawer').drawer();
     });
 })
